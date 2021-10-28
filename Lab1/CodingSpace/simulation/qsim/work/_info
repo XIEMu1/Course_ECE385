@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/home/Documents/University/Lessons/ECE_385/LAB/Lab1/CodingSpace/simulation/qsim
+vhard_block
+Z1 !s110 1632320341
+!i10b 1
+!s100 Y9oi_5=F2;PW7_Oil_L]N2
+Inemfn2`D3LzHNm;i<RcUS2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1632320340
+Z4 8LAB1.vo
+Z5 FLAB1.vo
+L0 135
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1632320341.000000
+Z8 !s107 LAB1.vo|
+Z9 !s90 -work|work|LAB1.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vLAB1
+R1
+!i10b 1
+!s100 Z9`=>QdE9L^o^IYge^:Ie1
+IBA^7KH<C:[Rc5`WOi[5[T0
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@l@a@b1
+vLAB1_vlg_vec_tst
+R1
+!i10b 1
+!s100 >?:Gd4fl<;[;9b3h8h:153
+II:_BE<RbJUQZQQ9GK7dkS1
+R2
+R0
+w1632320339
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R10
+R11
+n@l@a@b1_vlg_vec_tst

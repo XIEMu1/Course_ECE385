@@ -1,0 +1,163 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/four_bit_adder/simulation/modelsim
+vcarry_lookahead_adder
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1634207734
+!i10b 1
+!s100 ?Q=2XC]R2mB0d>>`b?OG]1
+IM@WRBNk7Phibec:P>z^eZ1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 carry_lookahead_adder_sv_unit
+S1
+R0
+Z5 w1634207542
+Z6 8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/four_bit_adder/lib/carry_lookahead_adder.sv
+Z7 FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/four_bit_adder/lib/carry_lookahead_adder.sv
+L0 1
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1634207734.000000
+Z10 !s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/four_bit_adder/lib/carry_lookahead_adder.sv|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/four_bit_adder/lib|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/four_bit_adder/lib/carry_lookahead_adder.sv|
+!i113 1
+Z12 o-sv -work work
+Z13 !s92 -sv -work work +incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/four_bit_adder/lib
+Z14 tCvgOpt 0
+vCLA
+R1
+R2
+!i10b 1
+!s100 V0A>WU4W]2Zj5C]k4:dLJ0
+I<e^znPY=e<g4dJ]AI5JI82
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 33
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+n@c@l@a
+vFull_Adder_mod
+R1
+R2
+!i10b 1
+!s100 Td=gz0jDJ@QUjbHRhHnnI1
+I59`a_7m3ZJ2kPA>JU0fWM1
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 64
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+n@full_@adder_mod
+vHexDriver
+R1
+R2
+!i10b 1
+!s100 =R2i165HPJgkY;aA[TRmG3
+I=AbA2[bV[TbRloLz[6F?j1
+R3
+!s105 HexDriver_sv_unit
+S1
+R0
+w1453932322
+8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/four_bit_adder/lib/HexDriver.sv
+FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/four_bit_adder/lib/HexDriver.sv
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1634207733.000000
+!s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/four_bit_adder/lib/HexDriver.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/four_bit_adder/lib|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/four_bit_adder/lib/HexDriver.sv|
+!i113 1
+R12
+R13
+R14
+n@hex@driver
+vlab4_adders_toplevel
+R1
+R2
+!i10b 1
+!s100 _z7Wl_[2DMBR:JLYVZ:X@0
+IQkB[^n`6CM2a_dK8J:cI13
+R3
+!s105 lab4_adders_toplevel_sv_unit
+S1
+R0
+w1634207073
+8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/four_bit_adder/lib/lab4_adders_toplevel.sv
+FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/four_bit_adder/lib/lab4_adders_toplevel.sv
+L0 17
+R8
+r1
+!s85 0
+31
+R9
+!s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/four_bit_adder/lib/lab4_adders_toplevel.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/four_bit_adder/lib|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/four_bit_adder/lib/lab4_adders_toplevel.sv|
+!i113 1
+R12
+R13
+R14
+vtestbench
+R1
+R2
+!i10b 1
+!s100 cHn3>7M4Azd4N4L[hSH[D1
+I6i;DbOEDS[om<EgRz@h>k0
+R3
+!s105 testbench_sv_unit
+S1
+R0
+w1634150452
+8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/four_bit_adder/lib/testbench.sv
+FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/four_bit_adder/lib/testbench.sv
+L0 5
+R8
+r1
+!s85 0
+31
+R9
+!s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/four_bit_adder/lib/testbench.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/four_bit_adder/lib|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/four_bit_adder/lib/testbench.sv|
+!i113 1
+R12
+R13
+R14

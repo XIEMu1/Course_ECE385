@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, D:/home/Documents/University/Lessons/ECE_385/LAB/Lab1/CodingSpace/LAB1_build.bdf
+source_file = 1, D:/home/Documents/University/Lessons/ECE_385/LAB/Lab1/CodingSpace/LAB1.bdf
+source_file = 1, D:/home/Documents/University/Lessons/ECE_385/LAB/Lab1/CodingSpace/Waveform.vwf
+source_file = 1, D:/home/Documents/University/Lessons/ECE_385/LAB/Lab1/CodingSpace/Waveform1.vwf
+source_file = 1, D:/home/Documents/University/Lessons/ECE_385/LAB/Lab1/CodingSpace/Waveform2.vwf
+source_file = 1, d:/bin/electrtools/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/7400.bdf
+design_name = LAB1
+instance = comp, \Z~output , Z~output, LAB1, 1
+instance = comp, \C~input , C~input, LAB1, 1
+instance = comp, \B~input , B~input, LAB1, 1
+instance = comp, \A~input , A~input, LAB1, 1
+instance = comp, \inst3|4~0 , inst3|4~0, LAB1, 1
+design_name = hard_block
+instance = comp, \~ALTERA_ASDO_DATA1~~ibuf , ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_FLASH_nCE_nCSO~~ibuf , ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_DATA0~~ibuf , ~ALTERA_DATA0~~ibuf, hard_block, 1

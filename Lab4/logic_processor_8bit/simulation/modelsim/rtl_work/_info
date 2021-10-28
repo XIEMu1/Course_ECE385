@@ -1,0 +1,287 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/simulation/modelsim
+vcompute
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1634153956
+!i10b 1
+!s100 i=]6932U1_OWO<5E?3HbR1
+IkfL32cMjVn6lce;lVa<Md1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 compute_sv_unit
+S1
+R0
+w1473975283
+8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/compute.sv
+FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/compute.sv
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1634153956.000000
+!s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/compute.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/compute.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib
+Z8 tCvgOpt 0
+vcontrol
+R1
+R2
+!i10b 1
+!s100 @ZeFLA8OZ3Z<dQNEOd39z3
+IT2S@<c;b97885eDPWc7@R0
+R3
+!s105 Control_sv_unit
+S1
+R0
+w1472681154
+8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/Control.sv
+FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/Control.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/Control.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/Control.sv|
+!i113 1
+R6
+R7
+R8
+vHexDriver
+R1
+R2
+!i10b 1
+!s100 ^DddjRd7Wla]U<SlP;mT@0
+IBa72kY`8Jl6Gg]>1EC2>:1
+R3
+!s105 HexDriver_sv_unit
+S1
+R0
+w1472679712
+8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/HexDriver.sv
+FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/HexDriver.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/HexDriver.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/HexDriver.sv|
+!i113 1
+R6
+R7
+R8
+n@hex@driver
+vProcessor
+R1
+Z9 !s110 1634153957
+!i10b 1
+!s100 FzTT9AZJMKRC=i`jND`_b3
+IM4mYJ1_YG;4j9]@L7D5WF3
+R3
+!s105 Processor_sv_unit
+S1
+R0
+w1472679613
+8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/Processor.sv
+FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/Processor.sv
+L0 8
+R4
+r1
+!s85 0
+31
+Z10 !s108 1634153957.000000
+!s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/Processor.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/Processor.sv|
+!i113 1
+R6
+R7
+R8
+n@processor
+vreg_4
+R1
+R2
+!i10b 1
+!s100 UTJd>donEc5YHBQRnSec70
+IWc`^8d2Yg7gJSje_L0nTX3
+R3
+!s105 Reg_4_sv_unit
+S1
+R0
+w1472679655
+8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/Reg_4.sv
+FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/Reg_4.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z11 !s108 1634153955.000000
+!s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/Reg_4.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/Reg_4.sv|
+!i113 1
+R6
+R7
+R8
+vregister_unit
+R1
+R2
+!i10b 1
+!s100 mAB^dkY1hL7?S5mm[SC^21
+IfT[]>zL:0:@KzUWJF2GN]3
+R3
+!s105 Register_unit_sv_unit
+S1
+R0
+w1472679685
+8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/Register_unit.sv
+FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/Register_unit.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/Register_unit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/Register_unit.sv|
+!i113 1
+R6
+R7
+R8
+vrouter
+R1
+Z12 !s110 1634153955
+!i10b 1
+!s100 lIdD9@`9>^lYia[Dkg2aV0
+I>U=@g9Dd4Sa3HlQ8?HlBe1
+R3
+!s105 Router_sv_unit
+S1
+R0
+w1472679706
+8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/Router.sv
+FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/Router.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R11
+!s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/Router.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/Router.sv|
+!i113 1
+R6
+R7
+R8
+vsync
+R1
+R12
+!i10b 1
+!s100 2W5Vz0:F6ckE2`eJOTK5l1
+I?EM;Ki1gUlXaRzWdXY>A90
+R3
+Z13 !s105 Synchronizers_sv_unit
+S1
+R0
+Z14 w1473642985
+Z15 8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/Synchronizers.sv
+Z16 FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/Synchronizers.sv
+L0 4
+R4
+r1
+!s85 0
+31
+R11
+Z17 !s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/Synchronizers.sv|
+Z18 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/Synchronizers.sv|
+!i113 1
+R6
+R7
+R8
+vsync_r0
+R1
+R12
+!i10b 1
+!s100 IGd9f_F;JNjVBLQ@DAnD10
+IjZ>XNWR<NO<b[GbRBV@852
+R3
+R13
+S1
+R0
+R14
+R15
+R16
+L0 18
+R4
+r1
+!s85 0
+31
+R11
+R17
+R18
+!i113 1
+R6
+R7
+R8
+vsync_r1
+R1
+R12
+!i10b 1
+!s100 1CXiH1DYDbAUS69Ee2j060
+I9k]0JBgcFcb5d:7iFi7i_0
+R3
+R13
+S1
+R0
+R14
+R15
+R16
+L0 39
+R4
+r1
+!s85 0
+31
+R11
+R17
+R18
+!i113 1
+R6
+R7
+R8
+vtestbench
+R1
+R9
+!i10b 1
+!s100 >mDZK99j54ZAnzNhkTM`20
+IncD0zTiLzPAk8Y1eCD6RP3
+R3
+!s105 testbench_sv_unit
+S1
+R0
+w1472597184
+8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/testbench.sv
+FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/testbench.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R10
+!s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/testbench.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab4/logic_processor_8bit/lib/testbench.sv|
+!i113 1
+R6
+R7
+R8
