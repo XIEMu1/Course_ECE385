@@ -1,6 +1,5 @@
-module reg_16 (input  logic Clk, Reset, Shift_In, Load, Shift_En,
-              input  logic [15:0]  D,
-              output logic Shift_Out,
+module reg_16 (input  logic Clk, Reset, Load, 
+              input  logic [15:0]  Data_In,
               output logic [15:0]  Data_Out);
 
 	// the module has 3 state: Reset, Load, Shift_En

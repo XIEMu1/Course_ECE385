@@ -1,7 +1,7 @@
 module ALU(
 			input logic 	[15:0]	A, B, 
-			input logic 	[1:0]	aluk,
-			output logic 	[15:0] 	ans
+			input logic 	[1:0]	ALUK,
+			output logic 	[15:0] 	ALU_Out
 		   );
 	/*
 		0	: 	+
@@ -11,11 +11,11 @@ module ALU(
 	*/
 
 	always_comb begin
-		case(aluk) 
-			2'b00	:	ans = A + B;
-			2'b01	:	ans = A & B;
-			2'b10	:	ans = ~A;
-			2'b11	:	ans = A;
+		case(ALUK) 
+			2'b00	:	ALU_Out = A + B;
+			2'b01	:	ALU_Out = A & B;
+			2'b10	:	ALU_Out = ~A;
+			2'b11	:	ALU_Out = A;
 		endcase
 	end 
 endmodule 
