@@ -1,9 +1,5 @@
 module datapath (
-				input logic 		GateMARMUX, 
-									GateMDR, 
-									GateALU, 
-									GatePC, 
-									Clk, 
+				input logic 		Clk, 
 									Reset,
 
                 input logic         LD_MAR,
@@ -28,15 +24,13 @@ module datapath (
 				input logic [1:0]   ADDR2MUX,
 									ALUK,
 				  
-				input logic         Mem_CE,
-									Mem_UB,
-									Mem_LB,
-									Mem_OE,
-									Mem_WE
+				input logic         CE, UB, LB, OE, WE,
 
 				input logic 		MIO_EN,
 
-				input logic 		[15:0] Data_to_CPU
+				input logic 		[15:0] MDR_In,
+
+				output logic 		[15:0] MAR, MDR, IR, PC
 );
 
 	logic 	[15:0] 	BUS,
@@ -46,8 +40,8 @@ module datapath (
 					MAR_Out,
 
 					PC_MUX_Out,
-					DR_MUX_Out,
-					SR1_MUX_Out,
+					
+					
 					SR2_MUX_Out,
 					MDR_MUX_Out,
 
@@ -57,7 +51,11 @@ module datapath (
 					SR1_Out,
 					SR2_Out,
 
+					BEN_Out,
 					ALU_Out,
+					BEN;
+	
+	logic	[2:0]	SR1_MUX_Out, DR_MUX_Out;
 
 
 
@@ -80,12 +78,12 @@ module datapath (
 							.d0(PC_Out + 1'b1),
 							.d1(BUS),
 							.d2(ADDR1_MUX_Out + ADDR2_MUX_Out),
-							.d3(),
+							.d3(2'b00),
 							.out(PC_MUX_Out)
 	);
 
 
-	multiplexer4_1 SR2_MUX (
+	multiplexer2_1 SR2_MUX (
 							.sel(SR2MUX),
 							.d0(SR2_Out),
 							.d1(BUS),  // ?
@@ -115,42 +113,42 @@ module datapath (
 							.out(ADDR2_MUX_Out)
 	);
 
-	multiplexer4_1 MDR_MUX (
+	multiplexer2_1 MDR_MUX (
 							.sel(MIO_EN),
-							.d0(Data_to_CPU),  // ?
-							.d1(BUS),  
-							.out(SR2_MUX_Out)
+							.d0(BUS),  // ?
+							.d1(MDR_In),  
+							.out(MDR_MUX_Out)
 	);
 
 
-	reg_16 PC(
+	reg_16 REG_PC(
 			.Clk(Clk),
 			.Reset(Reset),
-			.LD_REG(LD_PC),
+			.Load(LD_PC),
 			.Data_In(PC_MUX_Out),
 			.Data_Out(PC_Out)
 	);
 
-	reg_16 IR(
+	reg_16 REG_IR(
 			.Clk(Clk),
 			.Reset(Reset),
-			.LD_REG(LD_IR),
+			.Load(LD_IR),
 			.Data_In(BUS),
 			.Data_Out(IR_Out)
 	);
 
-	reg_16 MAR(
+	reg_16 REG_MAR(
 			.Clk(Clk),
 			.Reset(Reset),
-			.LD_REG(LD_MAR),
+			.Load(LD_MAR),
 			.Data_In(BUS),
 			.Data_Out(MAR_Out)
 	);
 	
-	reg_16 MDR(
+	reg_16 REG_MDR(
 			.Clk(Clk),
 			.Reset(Reset),
-			.LD_REG(LD_MDR),
+			.Load(LD_MDR),
 			.Data_In(MDR_MUX_Out),
 			.Data_Out(MDR_Out)
 	);
@@ -168,24 +166,31 @@ module datapath (
 
 	regfile RegFile(
 			.LD_REG(LDREG),
-			.CLK(CLk), 
+			.Clk(CLk), 
 			.Reset(Reset),
 			.BUS(BUS),
 			.DR_MUX(DR_MUX_Out), 
 			.SR1_MUX(SR1_MUX_Out), 
-			.SR2(SR2_Out),   //?
+			.SR2(),   //?
 			.SR1_out(SR1_Out), 
 			.SR2_out(SR2_Out)
 	);
 
-	multiplexer4_1 Tristate_Gate(
+	tristate_gate Tristate_Gate(
 							.sel({GatePC, GateMDR, GateALU, GateMARMUX}),
 							.d0(ADDR1_MUX_Out + ADDR2_MUX_Out),
 							.d1(ALU_Out),
 							.d2(MDR_Out),
 							.d3(PC_Out),
-							.out(SR1_MUX_Out)
+							.out(BUS)
 	);
 
+	always_comb begin
+		MDR = MDR_Out;
+		MAR = MAR_Out;
+		IR = IR_Out;
+		PC = PC_Out;
+		BEN = BEN_Out;
+	end 
 
 endmodule
