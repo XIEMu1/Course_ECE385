@@ -65,9 +65,9 @@ module datapath (
 	// Multiplexer definition
 
 	multiplexer2_1 #(3) DR_MUX (
-							.sel(PCMUX),
-							.d0(3'b111),
-							.d1(IR_Out[11:9]),
+							.sel(DRMUX),
+							.d0(IR_Out[11:9]),
+							.d1(3'b111),
 							.out(DR_MUX_Out)
 	);
 
@@ -171,7 +171,7 @@ module datapath (
 			.BUS(BUS),
 			.DR_MUX(DR_MUX_Out), 
 			.SR1_MUX(SR1_MUX_Out), 
-			.SR2(),   //?
+			.SR2(IR_Out[2:0]),   //?
 			.SR1_out(SR1_Out), 
 			.SR2_out(SR2_Out)
 	);

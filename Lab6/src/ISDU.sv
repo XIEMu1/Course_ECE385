@@ -55,7 +55,7 @@ module ISDU (   input logic         Clk,
 									Mem_WE
 				);
 
-	enum logic [3:0] {  Halted, 
+	enum logic [5:0] {  Halted, 
 						PauseIR1, 
 						PauseIR2, 
 						S_18, 
@@ -63,7 +63,44 @@ module ISDU (   input logic         Clk,
 						S_33_2, 
 						S_35, 
 						S_32, 
-						S_01}   State, Next_state;   // Internal state logic
+						S_01,
+						S_00,
+						S_02,
+						S_03,
+						S_04,
+						S_05,
+						S_06,
+						S_07,
+						S_08,
+						S_09,
+						S_10,
+						S_11,
+						S_12,
+						S_13,
+						S_14,
+						S_15,
+						S_16_1,
+						S_16_2,
+						S_17,
+						S_19,
+						S_20,
+						S_21,
+						S_22,
+						S_23,
+						S_24_1,
+						S_24_2,
+						S_25_1,
+						S_25_2,
+						S_26,
+						S_27,
+						S_28_1,
+						S_28_2,
+						S_29_1,
+						S_29_2,
+						S_30,
+						S_31,
+						S_34,
+						}   State, Next_state;   // Internal state logic
 		
 	always_ff @ (posedge Clk)
 	begin
@@ -79,31 +116,31 @@ module ISDU (   input logic         Clk,
 		Next_state = State;
 		
 		// Default controls signal values
-		LD_MAR = 1'b0;
-		LD_MDR = 1'b0;
-		LD_IR = 1'b0;
-		LD_BEN = 1'b0;
-		LD_CC = 1'b0;
-		LD_REG = 1'b0;
-		LD_PC = 1'b0;
-		LD_LED = 1'b0;
+		LD_MAR 		= 1'b0;
+		LD_MDR 		= 1'b0;
+		LD_IR 		= 1'b0;
+		LD_BEN 		= 1'b0;
+		LD_CC 		= 1'b0;
+		LD_REG 		= 1'b0;
+		LD_PC 		= 1'b0;
+		LD_LED 		= 1'b0;
 		 
-		GatePC = 1'b0;
-		GateMDR = 1'b0;
-		GateALU = 1'b0;
-		GateMARMUX = 1'b0;
+		GatePC 		= 1'b0;
+		GateMDR 	= 1'b0;
+		GateALU 	= 1'b0;
+		GateMARMUX 	= 1'b0;
 		 
-		ALUK = 2'b00;
+		ALUK 		= 2'b00;
 		 
-		PCMUX = 2'b00;
-		DRMUX = 1'b0;
-		SR1MUX = 1'b0;
-		SR2MUX = 1'b0;
-		ADDR1MUX = 1'b0;
-		ADDR2MUX = 2'b00;
+		PCMUX 		= 2'b00;
+		DRMUX 		= 1'b0;
+		SR1MUX 		= 1'b0;
+		SR2MUX 		= 1'b0;
+		ADDR1MUX 	= 1'b0;
+		ADDR2MUX 	= 2'b00;
 		 
-		Mem_OE = 1'b1;
-		Mem_WE = 1'b1;
+		Mem_OE 		= 1'b1;
+		Mem_WE 		= 1'b1;
 	
 		// Assign next state
 		unique case (State)
@@ -119,7 +156,7 @@ module ISDU (   input logic         Clk,
 			S_33_2 : 
 				Next_state = S_35;
 			S_35 : 
-				Next_state = PauseIR1;
+				Next_state = S_32;
 			// PauseIR1 and PauseIR2 are only for Week 1 such that TAs can see 
 			// the values in IR.
 			PauseIR1 : 
@@ -134,15 +171,150 @@ module ISDU (   input logic         Clk,
 					Next_state = S_18;
 			S_32 : 
 				case (Opcode)
-					4'b0001 : 
+					4'b0001 : // ADD
 						Next_state = S_01;
+					4'b0101 : // AND
+						Next_state = S_05;
+					4'b1001 : // NOT
+						Next_state = S_09;
+					4'b0000 : // BR
+						Next_state = S_00;
+					4'b1100 : // JMP
+						Next_state = S_12;
+					4'b0100 : // JSR
+						Next_state = S_04;
+					4'b0110 : // LDR
+						Next_state = S_06;
+					4'b0111 : // STR
+						Next_state = S_07;
+					4'b1101 : // PAUSE
+						Next_state = PauseIR1;
 
 					// You need to finish the rest of opcodes.....
 
 					default : 
 						Next_state = S_18;
 				endcase
-			S_01 : 
+			S_08 : //
+
+
+			// ========== ALU_OP ==========
+
+			S_01 : // ADD
+				Next_state = S_18;
+
+			S_05 : // AND
+				Next_state = S_18;
+			
+			S_09 : // NOT
+				Next_state = S_18;
+
+
+			// ========== TRAP ==========
+
+			S_15 : // TRAP
+				Next_state = S_28_1;
+
+			S_28_1 : // About TRAP
+				Next_state = S_28_2;
+			
+			S_28_2 : // About TRAP
+				Next_state = S_30;
+
+			S_30 : // About TRAP
+				Next_state = S_18;
+
+
+			// ========== LEA ==========
+
+			S_14 : // LEA
+				Next_state = S_18;
+
+
+			// ========== LD ==========
+
+			S_02 : // LD
+				Next_state = S_25;
+
+			S_06 : // LDR
+				Next_state = S_25;
+
+			S_10 : // LDI
+				Next_state = S_24_1;
+
+			S_24_1 : // About LD
+				Next_state = S_24_2;
+
+			S_24_2 : // About LD
+				Next_state = S_26;
+
+			S_26 : // About LD
+				Next_state = S_25_1;
+
+			S_25_1 : // About LD
+				Next_state = S_25_2;
+
+			S_25_2 : // About LD
+				Next_state = S_27;
+
+			S_27 : // About LD
+				Next_state = S_18;			
+
+
+			// ========== ST ==========
+
+			S_11 : // STI
+				Next_state = S_29_1;
+
+			S_07 : // STR
+				Next_state = S_23;
+			
+			S_14 : // ST
+				Next_state = S_23;
+			
+			S_29_1 : // About ST
+				Next_state = S_29_2;
+
+			S_29_2 : // About ST
+				Next_state = S_31;
+
+			S_31 : // About ST
+				Next_state = S_23;
+
+			S_23 : // About ST
+				Next_state = S_16_1;
+			
+			S_16_1 : // About ST
+				Next_state = S_16_2;
+			
+			S_16_2 : // About ST
+				Next_state = S_18;
+
+
+			// ========== JUMP ==========
+
+			S_00 : // BR
+				if (BEN == 1'b1) begin
+					Next_state = S_22;
+					end
+				else
+					Next_state = S_18;
+				
+
+			S_22 : // About BR
+				Next_state = S_18;
+
+			S_12 : // JMP
+				Next_state = S_18;
+
+			S_04 : // JSR
+				// conditional
+				Next_state = S_21;
+			
+			S_21 : // BR
+				Next_state = S_18;
+
+			S_20 : // BR
 				Next_state = S_18;
 
 			// You need to finish the rest of states.....
@@ -177,13 +349,144 @@ module ISDU (   input logic         Clk,
 			PauseIR2: ;
 			S_32 : 
 				LD_BEN = 1'b1;
-			S_01 : 
+
+			// ========== ALU OP ==========
+
+			S_01 : // AND
 				begin 
-					SR2MUX = IR_5;
-					ALUK = 2'b00;
-					GateALU = 1'b1;
-					LD_REG = 1'b1;
+					SR2MUX 		= 	IR_5;		// SR2MUX Control with IR5
+					SR1MUX 		= 	1'b0;		// Address of SR1
+					ALUK 		= 	2'b00;		// Operation 00 rep +
+					GateALU 	= 	1'b1;		// ALU -> BUS
+					LD_REG 		= 	1'b1;		// BUS -> REGFILE
+					DR_MUX 		= 	1'b0;		// Address of DR
+					LD_CC 		= 	1'b1;		// Update nzp
 					// incomplete...
+				end
+
+			S_05 : // AND
+				begin
+					SR2MUX 		= 	IR_5;		// SR2MUX Control with IR5
+					SR1MUX 		= 	1'b0;		// Address of SR1
+					ALUK 		= 	2'b01; 		// Operation 01 rep &
+					GateALU 	= 	1'b1;		// ALU -> BUS
+					LD_REG 		= 	1'b1;		// BUS -> REGFILE
+					DR_MUX 		= 	1'b0;		// Address of DR
+					LD_CC 		= 	1'b1;		// Update nzp					
+				end
+			
+			S_09 : // NOT
+				begin
+					SR2MUX 		= 	1'b0;		// any value
+					SR1MUX 		= 	1'b0;		// Address of SR1
+					ALUK 		= 	2'b10; 		// Operation 01 rep ~
+					GateALU 	= 	1'b1;		// ALU -> BUS
+					LD_REG 		= 	1'b1;		// BUS -> REGFILE
+					DR_MUX 		= 	1'b0;		// Address of DR
+					LD_CC 		= 	1'b1;		// Update nzp	
+				end
+		
+
+			// ========== LD ==========
+
+			S_06 : // LDR
+				begin
+					GateMARMUX  =	1'b1;		// MARMUX -> BUS
+					ADDR2_MUX	=	2'b01;		// select IR5:0
+					ADDR1_MUX	=	1'b0;		// select from SR1
+					SR1_MUX		=	1'b0;		// select IR8:6
+					LD_MAR		=	1'b1;		// MAR <- PC
+				end
+
+			S_25_1 : // About LD
+				begin
+					Mem_OE 		= 	1'b0;
+					Mem_WE 		= 	1'b1;
+				end
+
+			S_25_2 : // About LD
+				begin
+					Mem_OE 		= 	1'b0;
+					Mem_WE 		= 	1'b1;
+					LD_MDR 		= 	1'b1;
+				end
+
+			S_27 : // About LD
+				begin
+					GateMDR		=	1'b1;		// MDR -> BUS
+					LD_CC		=	1'b1;		// update CC
+					DR_MUX		=	1'b0;		// select DR in IR
+					LD_REG		=	1'b1;		// REG <- BUS
+				end
+
+			// ========== ST ==========
+
+			S_07 : // STR 
+				begin
+					GateMARMUX  =	1'b1;		// MARMUX -> BUS
+					ADDR2_MUX	=	2'b01;		// select IR5:0
+					ADDR1_MUX	=	1'b0;		// select from SR1
+					SR1_MUX		=	1'b0;		// select IR8:6
+					LD_MAR		=	1'b1;		// MAR <- PC
+				end
+
+			S_23 : // About ST, MDR <- 
+				begin
+					GateALU		=	1'b1;		// ALU -> BUS
+					ALUK		=	1'b1;		// bypass ALU
+					SR1_MUX		=	1'b1;		// select DR in IR11:9, BaseR
+					LD_MDR		=	1'b1;		// MDR <- BUS
+				end
+			
+			S_16_1 : // About ST
+				begin
+					Mem_OE 		= 	1'b1;
+					Mem_WE 		= 	1'b0;
+				end
+			
+			S_16_2 : // About ST
+				begin
+					Mem_OE 		= 	1'b1;
+					Mem_WE 		= 	1'b0;
+				end
+
+			// ========== JUMP ==========
+
+			S_00 : // BR
+				begin
+					// only for judge
+				end
+
+			S_22 : // About BR
+				begin
+					ADDR2_MUX 	= 	2'b10;		// IR[7:0]
+					ADDR1_MUX 	= 	1'b1;		// PC
+					LD_PC 		= 	1'b1;		// PC <- off9
+					PC_MUX 		= 	2'b10;		// select R1 + R2
+				end
+
+			S_12 : // JMP
+				begin
+					SR1_MUX		=	1'b0;		// BaseR in IR
+					ADDR1_MUX	=	1'b0;		// select from SR1
+					ADDR2_MUX	=	2'b00;		// select 0
+					PC_MUX		=	1'b10;		// select R1 + R2
+					LD_PC		=	1'b1;		// PC <- BaseR
+				end
+
+			S_04 : // JSR
+				begin
+					GatePC 		= 	1'b1;		// PC -> BUS
+					DR_MUX 		= 	IR_11;		// Adress of b111 = 7
+					LD_REG 		= 	1'b1;		// REGFILE 7 <- PC
+				end
+			
+			S_21 : // About BR
+				begin
+					ADDR1_MUX 	= 	1'b1;		// PC
+					ADDR2_MUX 	= 	2'b11;		// IR[10:0]
+					PC_MUX 		= 	2'b10;		// select R1 + R2
+					LD_PC 		= 	1'b1;		// PC <- PC + IR[10:0]
 				end
 
 			// You need to finish the rest of states.....
