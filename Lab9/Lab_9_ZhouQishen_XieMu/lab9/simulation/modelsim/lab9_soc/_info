@@ -1,0 +1,35 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/home/Documents/University/Lessons/ECE_385/LAB/Lab9/Lab9_Avalon_Provided_2.0/simulation/modelsim
+vavalon_aes_interface
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1639674122
+!i10b 1
+!s100 T]KjNaj4k2@O=Nf0AR3bM0
+Imko=?US48]Zb9Gdic94ZT1
+VDg1SIo80bB@j0V0VzS_@n1
+!s105 avalon_aes_interface_sv_unit
+S1
+R0
+w1637827929
+8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab9/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/avalon_aes_interface.sv
+FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab9/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/avalon_aes_interface.sv
+L0 21
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1639674122.000000
+!s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab9/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/avalon_aes_interface.sv|
+!s90 -reportprogress|300|-sv|-work|lab9_soc|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab9/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab9/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/avalon_aes_interface.sv|
+!i113 1
+o-sv -work lab9_soc
+!s92 -sv -work lab9_soc +incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab9/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules
+tCvgOpt 0

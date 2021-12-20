@@ -1,0 +1,9 @@
+17:06:23 **** Incremental Build of configuration Nios II for project app_acc ****
+make all 
+Info: Building ../app_acc_bsp/
+D:/bin/electrtools/intelFPGA_lite/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../app_acc_bsp/
+[BSP build complete]
+[app_acc build complete]
+
+17:06:24 Build Finished (took 1s.432ms)
+

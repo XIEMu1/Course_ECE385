@@ -1,0 +1,567 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/simulation/modelsim
+vALU
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1636062282
+!i10b 1
+!s100 1B4X5kXXJL5bn?kjm?z0g3
+Ij_]K`J3EN[e`UVeBUK^l01
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 ALU_sv_unit
+S1
+R0
+Z4 w1581796284
+8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/ALU.sv
+FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/ALU.sv
+L0 1
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1636062282.000000
+!s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/ALU.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model
+Z9 tCvgOpt 0
+n@a@l@u
+vBEN
+R1
+R2
+!i10b 1
+!s100 `Z?41z_WKP;@QaEf]NGn>3
+Io8C^o?0^7Wl3:=hWhLnUZ1
+R3
+!s105 BEN_sv_unit
+S1
+R0
+R4
+8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/BEN.sv
+FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/BEN.sv
+L0 1
+R5
+r1
+!s85 0
+31
+Z10 !s108 1636062281.000000
+!s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/BEN.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/BEN.sv|
+!i113 1
+R7
+R8
+R9
+n@b@e@n
+vdatapath
+R1
+Z11 !s110 1636062281
+!i10b 1
+!s100 14Ci<TKAYKJ3Nagk3LFD:2
+IM>GJW0k7kz4HTPHQUFWVk1
+R3
+!s105 datapath_sv_unit
+S1
+R0
+R4
+8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/datapath.sv
+FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/datapath.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R10
+!s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/datapath.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/datapath.sv|
+!i113 1
+R7
+R8
+R9
+vHexDriver
+R1
+R11
+!i10b 1
+!s100 =R2i165HPJgkY;aA[TRmG3
+IlfVnCNO?KMjDJMenibL[N2
+R3
+!s105 HexDriver_sv_unit
+S1
+R0
+R4
+8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/HexDriver.sv
+FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/HexDriver.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R10
+!s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/HexDriver.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/HexDriver.sv|
+!i113 1
+R7
+R8
+R9
+n@hex@driver
+vISDU
+R1
+R11
+!i10b 1
+!s100 @D2:dLVT2Ye=JIWVXiV4e2
+I`]mEhPI_0HVFlWIb5WLzZ1
+R3
+!s105 ISDU_sv_unit
+S1
+R0
+w1636018781
+8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/ISDU.sv
+FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/ISDU.sv
+Z12 L0 19
+R5
+r1
+!s85 0
+31
+R10
+!s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/ISDU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/ISDU.sv|
+!i113 1
+R7
+R8
+R9
+n@i@s@d@u
+vlab6_toplevel
+R1
+R2
+!i10b 1
+!s100 ROK_HdR0ziC>JUj4>8PJM2
+INdV[NbX=n`32F7GZDCA9>0
+R3
+!s105 lab6_toplevel_sv_unit
+S1
+R0
+R4
+8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/lab6_toplevel.sv
+FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/lab6_toplevel.sv
+L0 10
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/lab6_toplevel.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/lab6_toplevel.sv|
+!i113 1
+R7
+R8
+R9
+vMem2IO
+R1
+R11
+!i10b 1
+!s100 d<=A`]_5?F8Tz<i9:]04<3
+IBKa=Z6k`4FoznA<HIZ^Hn0
+R3
+!s105 Mem2IO_sv_unit
+S1
+R0
+R4
+8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/Mem2IO.sv
+FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/Mem2IO.sv
+Z13 L0 16
+R5
+r1
+!s85 0
+31
+R10
+!s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/Mem2IO.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/Mem2IO.sv|
+!i113 1
+R7
+R8
+R9
+n@mem2@i@o
+Xmemory_contents_sv_unit
+R1
+Z14 DXx4 work 6 SLC3_2 0 22 ECda;^BROzQ=aZhCV6LG]1
+VzJ@?2UlDm`eh`V^eageCM2
+r1
+!s85 0
+31
+!i10b 1
+!s100 c2m7WKcaV<L[XVf`30RGj3
+IzJ@?2UlDm`eh`V^eageCM2
+!i103 1
+S1
+R0
+R4
+Z15 8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/memory_contents.sv
+Z16 FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/memory_contents.sv
+L0 14
+R5
+R6
+Z17 !s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/memory_contents.sv|
+Z18 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/memory_contents.sv|
+!i113 1
+R7
+R8
+R9
+vmemory_parser
+R1
+R14
+DXx4 work 23 memory_contents_sv_unit 0 22 zJ@?2UlDm`eh`V^eageCM2
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 744B[g>P4=Q9zVQXU8>HF2
+Iz8IbQhBH@eR]@iB9;XDna2
+!s105 memory_contents_sv_unit
+S1
+R0
+R4
+R15
+R16
+R13
+R5
+R6
+R17
+R18
+!i113 1
+R7
+R8
+R9
+vmux_21_dynamic
+R1
+R11
+!i10b 1
+!s100 OkD]fgkJAj4h5akCHWHF:3
+I=n8Sh;DfQ8NRVfe1hYLzj0
+R3
+!s105 mux_21_dynamic_sv_unit
+S1
+R0
+R4
+8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/mux_21_dynamic.sv
+FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/mux_21_dynamic.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R10
+!s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/mux_21_dynamic.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/mux_21_dynamic.sv|
+!i113 1
+R7
+R8
+R9
+vmux_41_dynamic
+R1
+R11
+!i10b 1
+!s100 `m4fZn1<3Re77O`LQ[H7U1
+ILY0Kn43]WSaD26gTBXVi=2
+R3
+!s105 mux_41_dynamic_sv_unit
+S1
+R0
+R4
+8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/mux_41_dynamic.sv
+FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/mux_41_dynamic.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R10
+!s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/mux_41_dynamic.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/mux_41_dynamic.sv|
+!i113 1
+R7
+R8
+R9
+vreg_16bit
+R1
+R11
+!i10b 1
+!s100 `7BR3jC1i_SebRD=3CV^81
+I;zg:S4M5`Y_M^<:PUcdBR2
+R3
+!s105 reg_16bit_sv_unit
+S1
+R0
+R4
+8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/reg_16bit.sv
+FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/reg_16bit.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R10
+!s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/reg_16bit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/reg_16bit.sv|
+!i113 1
+R7
+R8
+R9
+vREGFILE
+R1
+R11
+!i10b 1
+!s100 Q3^a`^zFM2Ig@j?VJeFdg3
+IVDaLG4gz[c]?R<QWcSiV30
+R3
+!s105 REGFILE_sv_unit
+S1
+R0
+R4
+8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/REGFILE.sv
+FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/REGFILE.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R10
+!s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/REGFILE.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/REGFILE.sv|
+!i113 1
+R7
+R8
+R9
+n@r@e@g@f@i@l@e
+vslc3
+R1
+R2
+!i10b 1
+!s100 ]fbZL4jQ1QEhbQMXPdTiT0
+Ib<<nhP<]C[gJbhTN?f==k1
+R3
+!s105 slc3_sv_unit
+S1
+R0
+R4
+8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/slc3.sv
+FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/slc3.sv
+R12
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/slc3.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/slc3.sv|
+!i113 1
+R7
+R8
+R9
+XSLC3_2
+R1
+R11
+!i10b 1
+!s100 Cz8_^@QRefP31?j=Zf>lj0
+IECda;^BROzQ=aZhCV6LG]1
+VECda;^BROzQ=aZhCV6LG]1
+S1
+R0
+R4
+8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/SLC3_2.sv
+FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/SLC3_2.sv
+L0 24
+R5
+r1
+!s85 0
+31
+R10
+!s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/SLC3_2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/SLC3_2.sv|
+!i113 1
+R7
+R8
+R9
+n@s@l@c3_2
+vsync
+R1
+R11
+!i10b 1
+!s100 2W5Vz0:F6ckE2`eJOTK5l1
+IiMOKV>2TiCW]gYzD[fKB]3
+R3
+Z19 !s105 Synchronizers_sv_unit
+S1
+R0
+R4
+Z20 8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/Synchronizers.sv
+Z21 FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/Synchronizers.sv
+L0 4
+R5
+r1
+!s85 0
+31
+R10
+Z22 !s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/Synchronizers.sv|
+Z23 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/Synchronizers.sv|
+!i113 1
+R7
+R8
+R9
+vsync_r0
+R1
+R11
+!i10b 1
+!s100 IGd9f_F;JNjVBLQ@DAnD10
+INUMicSc_6TZ2URGiRTkLd2
+R3
+R19
+S1
+R0
+R4
+R20
+R21
+L0 18
+R5
+r1
+!s85 0
+31
+R10
+R22
+R23
+!i113 1
+R7
+R8
+R9
+vsync_r1
+R1
+R11
+!i10b 1
+!s100 1CXiH1DYDbAUS69Ee2j060
+IEY`[[^0a9HYb=OGJd^4L01
+R3
+R19
+S1
+R0
+R4
+R20
+R21
+L0 39
+R5
+r1
+!s85 0
+31
+R10
+R22
+R23
+!i113 1
+R7
+R8
+R9
+vtest_memory
+R1
+R11
+!i10b 1
+!s100 AZAU7PQT4]][EEHo>57W43
+IWdP4jQiYM;R6hN2VN5a:d1
+R3
+!s105 test_memory_sv_unit
+S1
+R0
+R4
+8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/test_memory.sv
+FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/test_memory.sv
+L0 22
+R5
+r1
+!s85 0
+31
+R10
+!s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/test_memory.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/test_memory.sv|
+!i113 1
+R7
+R8
+R9
+vtestbench
+R1
+R2
+!i10b 1
+!s100 1jelhHEYjAb4dA]>Phc=X3
+IUOaI^An?4d:`_TBR1DA_42
+R3
+!s105 testbench_w2_sv_unit
+S1
+R0
+w1636054349
+8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/testbench_w2.sv
+FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/testbench_w2.sv
+L0 43
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/testbench_w2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/testbench_w2.sv|
+!i113 1
+R7
+R8
+R9
+vtristate
+R1
+Z24 !s110 1636062280
+!i10b 1
+!s100 Akazoo=71mOgoH<gVR_UC0
+IUXFT5NLal>jf7L4`^X30F1
+R3
+!s105 tristate_sv_unit
+S1
+R0
+R4
+8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/tristate.sv
+FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/tristate.sv
+R13
+R5
+r1
+!s85 0
+31
+Z25 !s108 1636062280.000000
+!s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/tristate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/tristate.sv|
+!i113 1
+R7
+R8
+R9
+vtristate_mux41
+R1
+R24
+!i10b 1
+!s100 :fOCQ`H5Q7<[YSDa]Q0GA3
+ISjO3kMoZOm7nG8ZSII9R41
+R3
+!s105 tristate_mux41_sv_unit
+S1
+R0
+R4
+8D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/tristate_mux41.sv
+FD:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/tristate_mux41.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R25
+!s107 D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/tristate_mux41.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model|D:/home/Documents/University/Lessons/ECE_385/LAB/Lab6/lab6_model/tristate_mux41.sv|
+!i113 1
+R7
+R8
+R9

@@ -1,0 +1,6 @@
+18:29:41 **** Clean-only build of configuration Nios II for project usb1 ****
+make clean 
+[usb1 clean complete]
+
+18:29:41 Build Finished (took 272ms)
+
